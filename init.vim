@@ -26,6 +26,10 @@ endif
 set background=dark
 colorscheme monokai 
 
+" Startup
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
 " Neovim config
 syntax enable
 syntax on
