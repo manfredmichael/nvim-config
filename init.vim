@@ -6,12 +6,10 @@ Plug 'sickill/vim-monokai'
 
 " Other
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'w0rp/ale'
 Plug 'ap/vim-css-color'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-" Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'lambdalisue/suda.vim'
