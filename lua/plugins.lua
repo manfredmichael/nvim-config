@@ -1,3 +1,7 @@
+function get_config(name)
+    return string.format("require(\"config/%s\")", name)
+end
+
 return require('packer').startup(function()
   -- themes 
 	use 'tanvirtin/monokai.nvim'
@@ -35,6 +39,12 @@ return require('packer').startup(function()
   use 'Xuyuanp/nerdtree-git-plugin'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
   use 'ryanoasis/vim-devicons'
+  -- use 'akinsho/nvim-toggleterm.lua'
+  use {
+    "akinsho/nvim-toggleterm.lua",
+    keys = {"<C-y>", "<leader>fl", "<leader>gt"},
+    config = get_config("toggleterm")
+}
 
   -- other
   use 'tpope/vim-fugitive'
