@@ -1,5 +1,5 @@
 require('plugins')
--- require('config')
+require('config')
 -- require('statusline')
 -- require('lsp-conf')
 -- require('treesitter')
