@@ -1,6 +1,9 @@
 return require('packer').startup(function()
-	use 'wbthomason/packer.nvim'
+  -- themes 
 	use 'tanvirtin/monokai.nvim'
+
+  -- cmp
+	use 'wbthomason/packer.nvim'
 	use {
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -25,4 +28,16 @@ return require('packer').startup(function()
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'b0o/mapx.nvim'
+  
+  -- editor interface 
+  use 'itchyny/lightline.vim'
+  use 'preservim/nerdtree'
+  use 'Xuyuanp/nerdtree-git-plugin'
+  use 'tiagofumo/vim-nerdtree-syntax-highlight'
+  use 'ryanoasis/vim-devicons'
+
+  -- other
+  use 'tpope/vim-fugitive'
+  use 'lambdalisue/suda.vim'
+  use 'tpope/vim-commentary'
 end)
