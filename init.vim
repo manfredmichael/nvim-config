@@ -13,6 +13,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 
 " Other
 Plug 'ap/vim-css-color'
@@ -233,6 +234,20 @@ nnoremap \ :Ag<SPACE>
 set completeopt=menu,menuone,noselect
 
 lua <<EOF
+  local tabnine = require('cmp_tabnine.config')
+  tabnine:setup({
+    max_lines = 1000;
+    max_num_results = 20;
+    sort = true;
+    run_on_every_keystroke = true;
+    snippet_placeholder = '..';
+    ignored_file_types = { -- default is not to ignore
+      -- uncomment to ignore in lua:
+      -- lua = true
+    };
+  })
+
+
   -- Setup nvim-cmp.
   local cmp = require'cmp'
 
@@ -257,7 +272,10 @@ lua <<EOF
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'vsnip' }, -- For vsnip users.
-    }, {
+    },  {
+     	{ name = 'cmp_tabnine' },
+    }, 
+        {
       { name = 'buffer' },
     })
   })
@@ -289,8 +307,7 @@ lua <<EOF
 
   -- Setup lspconfig.
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-    capabilities = capabilities
-  }
+  require'lspconfig'.pyright.setup{}
 EOF
