@@ -30,7 +30,7 @@ return require('packer').startup(function()
 	use 'b0o/mapx.nvim'
   
   -- editor interface 
-  use 'itchyny/lightline.vim'
+  -- use 'itchyny/lightline.vim'
   use 'preservim/nerdtree'
   use 'Xuyuanp/nerdtree-git-plugin'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
