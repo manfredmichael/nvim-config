@@ -1,7 +1,7 @@
 require('plugins')
 require('config')
 -- require('statusline')
--- require('lsp-conf')
+require('lsp-conf')
 -- require('treesitter')
 -- require('mapping')
 -- require('telescope')
