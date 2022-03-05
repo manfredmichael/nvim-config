@@ -5,5 +5,5 @@ set.shiftwidth = 4
 set.completeopt = {'menu','menuone','noselect'}
 vim.g.mapleader = ' '
 
-vim.cmd 'colorscheme gruvbox'
+vim.cmd 'colorscheme monokai'
 vim.cmd 'highlight clear SignColumn'
