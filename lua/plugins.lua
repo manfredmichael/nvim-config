@@ -50,4 +50,9 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
   use 'lambdalisue/suda.vim'
   use 'tpope/vim-commentary'
+
+  -- javascript
+  use {'windwp/nvim-autopairs', after = {'nvim-treesitter', 'nvim-cmp'}, config = "require('plugins.autopairs')"}
+  use 'mxw/vim-jsx'
+  use 'pangloss/vim-javascript'
 end)
