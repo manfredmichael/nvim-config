@@ -53,4 +53,6 @@ return require('packer').startup(function()
   use 'mlaursen/vim-react-snippets'
   use 'dcampos/nvim-snippy'
   use 'honza/vim-snippets'
+  use {'dsznajder/vscode-es7-javascript-react-snippets',
+       run = 'yarn install --frozen-lockfile && yarn compile'}
 end)
