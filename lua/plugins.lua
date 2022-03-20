@@ -39,12 +39,11 @@ return require('packer').startup(function()
   use 'Xuyuanp/nerdtree-git-plugin'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
   use 'ryanoasis/vim-devicons'
-  -- use 'akinsho/nvim-toggleterm.lua'
   use {
     "akinsho/nvim-toggleterm.lua",
     keys = {"<C-y>", "<leader>fl", "<leader>gt"},
     config = get_config("toggleterm")
-}
+  }
 
   -- other
   use 'tpope/vim-fugitive'
@@ -55,4 +54,6 @@ return require('packer').startup(function()
   use {'windwp/nvim-autopairs', after = {'nvim-treesitter', 'nvim-cmp'}, config = "require('plugins.autopairs')"}
   use 'mxw/vim-jsx'
   use 'pangloss/vim-javascript'
+  use 'SirVer/ultisnips'
+  use 'mlaursen/vim-react-snippets'
 end)
