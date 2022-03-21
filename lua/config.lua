@@ -27,3 +27,6 @@ vim.g.mapleader = ' '
 
 vim.cmd 'colorscheme monokai'
 vim.cmd 'highlight clear SignColumn'
+
+vim.cmd 'command Z w | qa'
+vim.cmd 'cabbrev wqa Z'
