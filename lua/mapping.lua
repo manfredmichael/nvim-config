@@ -1,5 +1,5 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 local map = vim.api.nvim_set_keymap
 
-map('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+map('n', '<leader>e', ':NERDTreeToggle<CR>', {noremap = true, silent = true})
 
