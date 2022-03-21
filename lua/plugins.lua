@@ -21,7 +21,9 @@ return require('packer').startup(function()
 	use 'hrsh7th/nvim-cmp'
 	use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 	use 'onsails/lspkind-nvim'
-	use 'L3MON4D3/LuaSnip'
+  use "hrsh7th/vim-vsnip"
+  use "hrsh7th/vim-vsnip-integ"
+  use  "hrsh7th/cmp-vsnip"
 	use "rafamadriz/friendly-snippets"
 	use {
 	    'nvim-treesitter/nvim-treesitter',
@@ -47,13 +49,6 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
 
   -- javascript
-  use {'windwp/nvim-autopairs', after = {'nvim-treesitter', 'nvim-cmp'}, config = "require('plugins.autopairs')"}
-  use 'mxw/vim-jsx'
-  use 'pangloss/vim-javascript'
-  use 'mlaursen/vim-react-snippets'
-  use 'dcampos/nvim-snippy'
   use 'honza/vim-snippets'
   use 'ap/vim-css-color' 
-  use {'dsznajder/vscode-es7-javascript-react-snippets',
-       run = 'yarn install --frozen-lockfile && yarn compile'}
 end)
