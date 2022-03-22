@@ -50,5 +50,7 @@ return require('packer').startup(function()
 
   -- javascript
   use 'honza/vim-snippets'
+  use 'yuezk/vim-js'
+  use 'maxmellon/vim-jsx-pretty'
   use 'ap/vim-css-color' 
 end)
