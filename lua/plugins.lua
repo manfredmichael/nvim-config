@@ -34,6 +34,7 @@ return require('packer').startup(function()
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'b0o/mapx.nvim'
+  use 'windwp/nvim-ts-autotag'
   
   -- editor interface 
   -- use 'itchyny/lightline.vim'
@@ -53,4 +54,5 @@ return require('packer').startup(function()
   use 'yuezk/vim-js'
   use 'maxmellon/vim-jsx-pretty'
   use 'ap/vim-css-color' 
+
 end)
