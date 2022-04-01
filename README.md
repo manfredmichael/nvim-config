@@ -3,4 +3,5 @@
 My neovim config file
 
 ### Preview
-![](./preview.png)
+![](./preview1.png)
+![](./preview2.png)
