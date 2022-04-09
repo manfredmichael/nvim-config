@@ -49,6 +49,7 @@ return require('packer').startup(function()
   use 'lambdalisue/suda.vim'
   use 'tpope/vim-commentary'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'ThePrimeagen/harpoon'
 
   -- javascript
   use 'honza/vim-snippets'
