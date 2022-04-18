@@ -4,7 +4,7 @@ require'nvim-treesitter.configs'.setup {
   ensure_installed = {"html", "javascript", "lua"},
   highlight = {
     -- `false` will disable the whole extension
-    enable = true,
+    enable = false,
 
     -- list of language that will be disabled
     disable = {},
