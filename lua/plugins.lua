@@ -56,5 +56,6 @@ return require('packer').startup(function()
   use 'yuezk/vim-js'
   use 'maxmellon/vim-jsx-pretty'
   use 'ap/vim-css-color' 
+  use 'windwp/nvim-autopairs'
 
 end)
