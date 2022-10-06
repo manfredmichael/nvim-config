@@ -38,9 +38,16 @@ return require('packer').startup(function()
   
   -- editor interface 
   -- use 'itchyny/lightline.vim'
-  use 'preservim/nerdtree'
-  use 'Xuyuanp/nerdtree-git-plugin'
-  use 'tiagofumo/vim-nerdtree-syntax-highlight'
+  -- use 'preservim/nerdtree'
+  -- use 'Xuyuanp/nerdtree-git-plugin'
+  -- use 'tiagofumo/vim-nerdtree-syntax-highlight'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
   use 'ryanoasis/vim-devicons'
   use "akinsho/nvim-toggleterm.lua"
 

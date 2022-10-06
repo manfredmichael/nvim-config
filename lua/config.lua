@@ -25,6 +25,7 @@ set.smartcase = true
 set.showmode = false 
 vim.g.mapleader = ' '
 
+
 vim.cmd 'colorscheme monokai'
 vim.cmd 'highlight clear SignColumn'
 

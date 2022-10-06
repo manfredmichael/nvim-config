@@ -5,7 +5,7 @@ vim.api.nvim_exec([[
     autocmd VimEnter * ToggleTerm size=10 
   ]], true)
 
--- Run NERDTree on start up 
+-- Run NvimTree on start up 
 vim.api.nvim_exec([[
-    autocmd VimEnter * NERDTree
+    autocmd VimEnter * NvimTreeOpen 
   ]], true)
