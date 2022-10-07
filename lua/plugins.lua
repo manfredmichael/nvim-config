@@ -33,6 +33,7 @@ return require('packer').startup(function()
 	  'nvim-telescope/telescope.nvim',
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
+  use 'ThePrimeagen/harpoon'
 	use 'b0o/mapx.nvim'
   use 'windwp/nvim-ts-autotag'
   
