@@ -26,7 +26,7 @@ set.showmode = false
 vim.g.mapleader = ' '
 
 
-vim.cmd 'colorscheme monokai'
+-- vim.cmd 'colorscheme monokai'
 vim.cmd 'highlight clear SignColumn'
 
 vim.cmd 'command Z w | qa'

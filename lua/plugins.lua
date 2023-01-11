@@ -35,7 +35,6 @@ return require('packer').startup(function()
 	}
   use 'ThePrimeagen/harpoon'
 	use 'b0o/mapx.nvim'
-  use 'windwp/nvim-ts-autotag'
   
   -- editor interface 
   -- use 'itchyny/lightline.vim'
